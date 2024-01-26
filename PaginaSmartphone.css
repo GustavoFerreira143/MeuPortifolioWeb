@@ -1,0 +1,198 @@
+@media screen and (min-width:600px) {
+    .fundoheader {
+        display: flex;
+        background-color: aliceblue;
+    }
+
+    .headerEsq {
+        display: inline-flex;
+    }
+
+    #Icone {
+        float: left;
+    }
+
+    #TextoHeader {
+        position: relative;
+        left: 2%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: medium;
+
+    }
+    .headerDir {
+        display: inline-flex;
+        margin-left:10%;
+        position: relative;
+        margin-top: 3%;
+        background-color: aquamarine;
+        height: 30px;
+        width:140px;
+        padding-top: 5px;
+        bottom: 10px;
+        padding-left:10px;
+        border-radius: 5%;
+        border: groove;
+        border-color: black;
+        right: 1%;
+
+
+    }
+
+    #Projetos {
+        position: relative;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        color: rgb(89, 191, 250);
+        margin-left: 3px;
+    }
+
+    .corpo {
+        display: flex;
+        background-image: url(./img/por-do-sol-na-cidade-com-arranha-ceus.jpg);
+        background-position: 0;
+        background-size: 100%;
+        border-top-left-radius: 1%; 
+
+    }
+
+    .corpoDir {
+        padding: 10px;
+        background-color: rgba(0, 104, 117, 0.315);
+        margin-bottom: 20px;
+        margin-top: 20px;
+        border-radius: 10px;
+        margin-left:10%;
+    }
+
+    #MinhaImg {
+        border-radius: 15px;
+        height: 500px;
+    }
+
+    .corpoEsq {
+        background-color: rgba(255, 255, 255, 0.521);
+        margin-left: 3%;
+    }
+
+    #Titulo {
+        text-align: center;
+        position: relative;
+        top: 20%;
+    }
+
+    h4 {
+        position: relative;
+        top: 20%;
+        text-align: center;
+    }
+
+    .texto {
+        position: relative;
+        top: 13%;
+        background-color: rgba(52, 69, 100, 0.281);
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+
+    .FooterConteudo {
+        display: flex;
+        padding: 10px;
+        background-color: rgba(0, 104, 117, 0.315);
+        align-content: center;
+        background-color: aliceblue;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-bottom-right-radius: 2%;
+
+    }
+
+    .FooterTexto {
+        background-color: rgba(255, 255, 255, 0.521);
+
+    }
+
+    .Links {
+     
+      margin-left:10%;
+      padding-left: 4%;
+      padding-right: 3%;
+      position: relative;
+      left: 5%;
+    }
+
+    .linkgit {
+        display: inline-flex;
+        height: 30px;
+        background-color: aquamarine;
+        border-radius: 5%;
+        padding-left: 4%;
+        padding-right: 3%;
+        border: groove;
+        border-color: black;
+        border-width: 2px;
+        margin-top: 2%;
+        
+
+    }
+
+    #linkText {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        text-align: center;
+        position: relative;;
+        bottom: 5px;
+        top: 15%;
+        font-size: 70%;
+
+    }
+
+    #linkimg {
+        margin-top: 2px;
+        float: left;
+        border-radius: 100%;
+        margin-right: 5px;
+        position: relative;
+        right: 3px;
+    }
+
+    .linkDin {
+        padding-right: 3%;
+        padding-left: 3%;
+        display: inline-flex;
+        margin-top: 1px;
+        border: groove;
+        border-color: black;
+        background-color: aquamarine;
+        border-radius: 5%;
+        height: 30px;
+        border-width: 2px;
+        margin-top: 2%;
+
+
+    }
+
+    #linkDinimg {
+        margin-top: 5px;
+
+    }
+
+    #LinkDin {
+        position: relative;
+        left:3% ;
+        bottom: 5px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        top: 15%;
+        font-size: 70%;
+    }
+
+    .TextoFooter {
+
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+        font-size: medium;
+        color: rgb(37, 37, 37);
+    }
+}
+
