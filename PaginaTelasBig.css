@@ -47,6 +47,7 @@
         font-weight: bold;
         color: rgb(89, 191, 250);
         position: relative;
+        left: 5%;
     }
 
 
@@ -202,17 +203,3 @@
         color: rgb(37, 37, 37);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

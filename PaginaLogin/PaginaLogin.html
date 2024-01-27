@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaginaDeLogin</title>
+    <link type="text/css" rel="stylesheet" href="./PaginaLogin.css">
+
+</head>
+<body>
+    <header class="fundoheader">
+
+        <div class="headerEsq">
+
+            <img id="Icone" src="../img/Icon.png" height="60px">
+            <h3 id="TextoHeader">
+                Pagina de Trabalhos Gustavo Ferreira
+            </h3>
+        </div>
+
+
+        <div class="headerDir">
+
+            <div class="Voltar">
+                <a id="BotaoVoltar" href="../PaginaPrincipal.html">Voltar</a>
+            </div>
+
+        </div>
+
+    </header>
+
+    <div class="Background">
+        <div class="FundoBox">
+
+            <div class="BoxLogin">
+                <h2>Login</h2>
+                <h4>
+                    Nome
+                </h4>
+                <input type="text" placeholder="Digite Seu Nome">
+                <h4>Senha</h4>
+                <input id="Senha" type="password" placeholder="Digite Sua Senha">
+                <img id="MostrarSenha" src="../img/EsconderSenha.png" onclick="Esconder();">
+
+            </div>
+
+        </div>
+        <p>Não tem Cadastro?</p>
+        <a href="../Cadastro/Cadastro.html" id="Cadastrar">Cadastrar-se</a>
+    </div>
+
+    <script src="./PaginaLogin.js"></script>
+</body>
+</html>
