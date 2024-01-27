@@ -1,0 +1,396 @@
+@media screen and (min-width: 1200px) {
+    .fundoheader {
+        display: flex;
+        background-color: aliceblue;
+    }
+
+    .headerEsq {
+        display: inline-flex;
+    }
+
+    #Icone {
+        float: left;
+    }
+
+    .headerDir {
+        margin-left: 55%;
+    }
+
+    .Voltar {
+        position: relative;
+        background-color: aqua;
+        padding-right: 10px;
+        padding-left: 10px;
+        height: 30px;
+        width: 50px;
+        border: groove;
+        border-color: black;
+        border-radius: 10%;
+        top: 10px;
+    }
+
+    #BotaoVoltar {
+        position: relative;
+        top: 15%;
+        left: 15%;
+        color: black;
+    }
+
+    #TextoHeader {
+
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: large;
+        position: relative;
+        left: 2%;
+
+
+    }
+
+
+
+    .Background {
+        background: linear-gradient(to bottom, rgb(150, 213, 255), rgb(255, 255, 255));
+        padding: 100px;
+        padding-bottom: 25dvb;
+    }
+
+
+    .FundoBox {
+        padding-top: 50px;
+        border-radius: 10%;
+        background: linear-gradient(to right, rgba(49, 60, 63, 0.466), black);
+        display: block;
+        border: groove;
+        margin-left: 30%;
+        border-color: rgb(0, 0, 0);
+        margin-right: 30%;
+        padding-bottom: 80px;
+
+    }
+
+    h4 {
+        position: relative;
+        left: 17%;
+        color: white;
+        font-size: larger;
+    }
+
+    h2 {
+        text-align: center;
+        color: rgb(188, 255, 235);
+        font-size: 38px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .LinhaSenha {
+        display: inline;
+    }
+
+    input {
+        position: relative;
+        left: 17%;
+        height: 30px;
+        width: 60%;
+        border-radius: 2%;
+        border: none;
+    }
+
+    .Cadastro {
+        text-align: center;
+
+    }
+
+    #Cadastrar {
+        color: black;
+    }
+    #Enviar
+{
+    display:flex ;
+    width:70px;
+    height: 40px;
+   position: relative;
+   top: 15px;
+  left: 40%;
+  border-radius: 10%;
+  font-size: larger;
+  color: white;
+  background-color: black;
+  padding-top: 8px;
+  
+}
+
+    #MostrarSenha {
+        position: relative;
+        left: 9%;
+        top: 6px;
+        border-radius: 100%;
+        width: 20px;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .fundoheader {
+        display: flex;
+        background-color: aliceblue;
+    }
+
+    .headerEsq {
+        display: inline-flex;
+    }
+
+    #Icone {
+        float: left;
+    }
+
+    .headerDir {
+        margin-left: 60%;
+    }
+
+    .Voltar {
+        position: relative;
+        background-color: aqua;
+        padding-right: 10px;
+        padding-left: 10px;
+        height: 30px;
+        width: 50px;
+        border: groove;
+        border-color: black;
+        border-radius: 10%;
+        top: 10px;
+    }
+
+    #BotaoVoltar {
+        position: relative;
+        top: 15%;
+        left: 15%;
+        color: black;
+    }
+
+    #TextoHeader {
+
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: large;
+        position: relative;
+        left: 2%;
+
+
+    }
+
+
+
+    .Background {
+        background: linear-gradient(to bottom, rgb(150, 213, 255), rgb(255, 255, 255));
+        padding: 100px;
+        padding-bottom: 25dvb;
+    }
+
+
+    .FundoBox {
+        padding-top: 50px;
+        border-radius: 10%;
+        background: linear-gradient(to right, rgba(49, 60, 63, 0.466), black);
+        display: block;
+        border: groove;
+        margin-left: 35%;
+        border-color: rgb(0, 0, 0);
+        margin-right: 30%;
+        padding-bottom: 80px;
+
+    }
+
+    h4 {
+        position: relative;
+        left: 17%;
+        color: white;
+        font-size: larger;
+    }
+
+    h2 {
+        text-align: center;
+        color: rgb(188, 255, 235);
+        font-size: 38px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .LinhaSenha {
+        display: inline;
+    }
+
+    input {
+        position: relative;
+        left: 17%;
+        height: 30px;
+        width: 60%;
+        border-radius: 2%;
+        border: none;
+    }
+
+    .Cadastro {
+        position: relative;
+        left: 2%;
+        text-align: center;
+
+    }
+    #Enviar
+{
+    display:flex ;
+    width:70px;
+    height: 40px;
+   position: relative;
+   top: 15px;
+  left: 40%;
+  border-radius: 10%;
+  font-size: larger;
+  color: white;
+  background-color: black;
+  padding-top: 8px;
+  
+}
+
+    #Cadastrar {
+        color: black;
+    }
+
+    #MostrarSenha {
+        position: relative;
+        left: 9%;
+        top: 6px;
+        border-radius: 100%;
+        width: 20px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .fundoheader {
+        display: flex;
+        background-color: aliceblue;
+    }
+
+    .headerEsq {
+        display: inline-flex;
+    }
+
+    #Icone {
+        float: left;
+    }
+
+    .headerDir {
+        margin-left: 60%;
+    }
+
+    .Voltar {
+        position: relative;
+        background-color: aqua;
+        padding-right: 10px;
+        padding-left: 10px;
+        height: 30px;
+        width: 50px;
+        border: groove;
+        border-color: black;
+        border-radius: 10%;
+        top: 10px;
+    }
+
+    #BotaoVoltar {
+        position: relative;
+        top: 15%;
+        left: 15%;
+        color: black;
+    }
+
+    #TextoHeader {
+
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: large;
+        position: relative;
+        left: 2%;
+
+
+    }
+
+
+
+    .Background {
+        background: linear-gradient(to bottom, rgb(150, 213, 255), rgb(255, 255, 255));
+        padding: 100px;
+        padding-bottom: 25dvb;
+    }
+
+
+    .FundoBox {
+        padding-top: 50px;
+        border-radius: 10%;
+        background: linear-gradient(to right, rgba(49, 60, 63, 0.466), black);
+        display: block;
+        border: groove;
+        margin-left: 40%;
+        border-color: rgb(0, 0, 0);
+        margin-right: 38%;
+        padding-bottom: 80px;
+
+    }
+
+    h4 {
+        position: relative;
+        left: 17%;
+        color: white;
+        font-size: larger;
+    }
+
+    h2 {
+        text-align: center;
+        color: rgb(188, 255, 235);
+        font-size: 38px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .LinhaSenha {
+        display: inline;
+    }
+
+    input {
+        position: relative;
+        left: 17%;
+        height: 30px;
+        width: 60%;
+        border-radius: 2%;
+        border: none;
+    }
+
+
+    .Cadastro {
+        text-align: center;
+        position: relative;
+        left: 1%;
+
+
+    }
+#Enviar
+{
+    display:flex ;
+    width:70px;
+    height: 40px;
+   position: relative;
+   top: 15px;
+  left: 40%;
+  border-radius: 10%;
+  font-size: larger;
+  color: white;
+  background-color: black;
+  padding-top: 8px;
+  
+}
+
+
+    #Cadastrar {
+        color: black;
+    }
+
+    #MostrarSenha {
+        position: relative;
+        left: 9%;
+        top: 6px;
+        border-radius: 100%;
+        width: 20px;
+    }
+}
