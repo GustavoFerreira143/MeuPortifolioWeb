@@ -50,14 +50,23 @@
         display: flex;
         background-image: url(./img/por-do-sol-na-cidade-com-arranha-ceus.jpg);
         background-position: 0;
-        background-size: 100%;
+        background-size: 180%;
         border-top-left-radius: 1%;
+        padding-bottom: 25%;
 
+    }
+        .corpoDir {
+        padding: 10px;
+        background-color: rgba(0, 104, 117, 0.315);
+        margin-bottom: 20px;
+        margin-top:20%;
+        border-radius: 10px;
+        margin-left:25%;
     }
 
     #MinhaImg {
+     
         border-radius: 3%;
-        margin-top: 2%;
         margin-bottom: 2%;
         background-color: rgba(0, 255, 255, 0.192);
     }
@@ -65,7 +74,9 @@
     .corpoEsq {
         background-color: rgba(255, 255, 255, 0.521);
         margin-right: 20px;
+        margin-top:20%;
         margin-left: 20px;
+       
     }
 
     #Titulo {
