@@ -1,6 +1,4 @@
 <?php
-$Email = $_GET['Email'];
-
 function numero($token0, $token1, $token2, $token3)
 {
     $i = 0;
@@ -18,16 +16,45 @@ function numero($token0, $token1, $token2, $token3)
         return $token0[0] . $token1[0] . $token2[0] . $token3[0];
     }
 }
+$token=numero(0,0,0,0);
+echo $token;
 
-$pagina="./Confirmacao.html";
-header("Location: ".$pagina );
+
+
+
+$conf=file_get_contents("token.txt");
+if($conf=="")
+{
+
+$texto="token.txt";
+$arquivo=fopen($texto,"a+");
+fwrite($arquivo,$token);
+fclose($arquivo);
+}
+
+else
+{
+    $texto="token.txt";
+    $arquivo=fopen($texto,"w+");
+    fclose($arquivo);  
+    
+    $arquivo=fopen($texto,"a+");
+    fwrite($arquivo,$token);
+    fclose($arquivo); 
+}
+$tokenweb=$_GET['token'];
+$conv=strval($tokenweb);
+if($tokenweb==$conf)
+{
+    echo header('Location: Senha.html');
+    die();
+}
+else
+{
+
+}
+header('Location: Confirmacao.html');
 die();
 
+?>
 
-
-/*$de="gustavo.gamer2350@gmail.com";
-$para="gustavo.gamer2350@gmail.com";
-$anexo="Teste de envio";
-$mensagem=$Email;
-$header="From:".$de;
-mail($para,$anexo,$mensagem,$header);
