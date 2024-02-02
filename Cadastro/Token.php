@@ -1,4 +1,5 @@
 <?php
+$Email=$_GET['Email'];
 function numero($token0, $token1, $token2, $token3)
 {
     $i = 0;
@@ -17,44 +18,80 @@ function numero($token0, $token1, $token2, $token3)
     }
 }
 $token=numero(0,0,0,0);
-echo $token;
+
+$conf=file_get_contents("EmailToken.txt");
+$pesquisa=strstr($conf,$Email);
 
 
-
-
-$conf=file_get_contents("token.txt");
-if($conf=="")
+if($pesquisa===false)
 {
-
-$texto="token.txt";
-$arquivo=fopen($texto,"a+");
-fwrite($arquivo,$token);
-fclose($arquivo);
+    $txttoke="token.txt";
+    $texto="Email.txt";
+    $arquivo=fopen($texto,"a+");
+    $digitoke=fopen($txttoke,"a+");
+    fwrite($arquivo,$Email.PHP_EOL);
+    fwrite($digitoke,$token.PHP_EOL);
+    fclose($arquivo); 
 }
 
 else
 {
-    $texto="token.txt";
-    $arquivo=fopen($texto,"w+");
-    fclose($arquivo);  
-    
-    $arquivo=fopen($texto,"a+");
-    fwrite($arquivo,$token);
-    fclose($arquivo); 
+
 }
+
+
+$toketxt=file_get_contents("token.txt");
+$EmailFile=file_get_contents("Email.txt");
+$tokearray=explode(PHP_EOL,$toketxt);
+$emailarray=explode(PHP_EOL,$EmailFile);
+
 $tokenweb=$_GET['token'];
-$conv=strval($tokenweb);
-if($tokenweb==$conf)
+
+
+if($tokenweb!=null)
 {
-    echo header('Location: Senha.html');
+    $tokenweblen=strlen($tokenweb);
+    $array=array_search($tokenweb,$tokearray);
+
+if($tokenweblen==4 && $array!==false)
+{
+    
+    
+    $Procura=array_search($tokenweb,$tokearray);
+    $DadosToken=strval($tokearray[$Procura]);
+
+    $DadosEmail=strval($emailarray[$Procura]);
+
+
+    $EmailToken='EmailToken.txt';
+    $Juncao=fopen($EmailToken,"a+");
+    fwrite($Juncao,$DadosEmail.":".$DadosToken.PHP_EOL);
+    fclose($Juncao);
+
+
+    $EmailArquivo='Email.txt';
+    $nomeArquivo = 'token.txt';
+
+    $dadosRemocao=$DadosEmail.PHP_EOL;
+    $dadoParaRemover = $tokenweb.PHP_EOL;
+
+    $conteudo = file_get_contents($nomeArquivo);
+    $novoConteudo = str_replace($dadoParaRemover, '', $conteudo);
+
+    $EmailContent=file_get_contents($EmailArquivo);
+    $EmailNovo= str_replace($dadosRemocao, '', $EmailContent);
+
+    file_put_contents($nomeArquivo, $novoConteudo);
+    file_put_contents($EmailArquivo, $EmailNovo);
+
+    header('Location: Senha.html');
     die();
 }
 else
 {
-
+    header('Location: Confirmacao.html');
+}
 }
 header('Location: Confirmacao.html');
-die();
-
 ?>
-
+    
